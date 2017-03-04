@@ -14,13 +14,16 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	background-color: white;
-	min-width: 1200px;
-	max-width: 1480px;
-	min-height: 100%;
+	min-width: 1200;
+	max-width: 1480;
+	min-height: 95%;
 }
 
 header{
 	height: 125px;
+	background-image: url(placeholder.png);
+	background-position: left;
+	background-repeat: no-repeat;
 	background-color: rgb(251, 204, 158);
 }
 
@@ -30,13 +33,14 @@ header{
 }
 
 nav ul{
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
 }
 
 nav li{
 	display: inline;
-	padding: 0px 30px;
+	padding: 0px 10px;
 }
 
 nav li a{
@@ -58,23 +62,19 @@ main{
 }
 
 footer{
-	width: 95%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	min-width: 1200px;
-	max-width: 1480px;
-	
 	background-color: rgb(251, 204, 158);
 	font-size: 75%;
-	/* line-height: 150%; */
-	position: relative;
 	margin-top: -100px;
 	height: 100px;
-	clear: both;
 	display: flex;
 	justify-content: space-between;
 }
-
+	
+}
+}
 .center{
 	text-align: center;
 }
@@ -90,18 +90,33 @@ footer{
 }
 
 .box{
-	border: 1px solid black;
-	border-radius: 5px;
+	display: block;
+	border:outset 3px #cccccc;
+	background-color: silver;
+	margin: 10px;
+	padding: 10px;
+	height: 45%;
+	width: 45%;
 }
 
 .floatleft{
 	float: left;
+	margin: 5px;
+	
 }
 
 .floatright{
 	float: right;
+	margin: 5px;
 }
 
 .clear{
 	clear: both;
+}
+.box2{
+	display: block;
+	border:outset 3px #cccccc;
+	background-color: silver;
+	margin: 10px;
+	padding: 10px;
 }
